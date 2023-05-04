@@ -4,7 +4,6 @@
 /*
   Data submitted through a form is not sanitized by default. We have methods to sanitize data manually.
 */
-
 if (isset($_POST['submit'])) {
   // $name = $_POST['email'];
   // $email = $_POST['email'];

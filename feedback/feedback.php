@@ -6,7 +6,7 @@ $result = mysqli_query($conn, $sql);
 $feedback = mysqli_fetch_all($result, MYSQLI_ASSOC);
 ?>
 
-   
+
   <h2>Past Feedback</h2>
 
   <?php if (empty($feedback)): ?>
@@ -20,7 +20,7 @@ $feedback = mysqli_fetch_all($result, MYSQLI_ASSOC);
        <div class="text-secondary mt-2">By <?php echo $item[
          'name'
        ]; ?> on <?php echo date_format(
-   date_create($item['date']),
+   date_create( $item['date']),
    'g:ia \o\n l jS F Y'
  ); ?></div>
      </div>

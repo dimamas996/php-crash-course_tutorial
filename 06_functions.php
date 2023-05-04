@@ -33,6 +33,19 @@ function add($num1, $num2)
   return $num1 + $num2;
 }
 
+//global variables
+$y = 1;
+
+function example($v) {
+    global $y; // "catching" variable from global scope
+    $x = 3;
+    return $y + $x + $v;
+}
+echo '<br>';
+echo example(10);
+echo '<br>';
+// ___________________
+
 $sum = add(5, 5);
 echo $sum;
 

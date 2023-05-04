@@ -14,7 +14,14 @@
 for ($x = 0; $x <= 10; $x++) {
   echo "Number: $x <br>";
 }
+echo '__________<br>';
 
+/* ------------ count(array) _ arrray.length in JS  ------------ */
+$arr = ['fsdf', 'dfdsfd', 'fdsfds'];
+for ($x = 0; $x < count($arr); $x++) {
+  echo "Number: $arr[$x] <br>";
+}
+echo '__________<br>';
 /* ------------ While Loop ------------ */
 
 /*
@@ -60,18 +67,19 @@ do {
 
 $numbers = [1, 2, 3, 4, 5];
 
+echo '__________<br>';
 foreach ($numbers as $x) {
   echo "Number: $x <br>";
 }
-
+echo '__________<br>';
 // Use the indexes within the loop
 
 $posts = ['Post One', 'Post Two', 'Post Three'];
 
 foreach ($posts as $index => $post) {
-  echo "${index} - ${post} <br>";
+  echo $index + 1 . " - ${post} <br>";
 }
-
+echo '__________<br>';
 // Use the keys within the loop for an associative array
 
 $person = [
